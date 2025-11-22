@@ -3,21 +3,7 @@
 ## Overview
 This lab explores two powerful unsupervised learning techniques—Hierarchical Clustering and DBSCAN—applied to the Wine dataset from scikit-learn. The lab demonstrates how different clustering algorithms perform on the same dataset and provides insights into their strengths, weaknesses, and optimal use cases.
 
----
-
-## Table of Contents
-1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Dataset Information](#dataset-information)
-4. [Lab Structure](#lab-structure)
-5. [Running the Lab](#running-the-lab)
-6. [Expected Outputs](#expected-outputs)
-7. [Key Findings](#key-findings)
-8. [Troubleshooting](#troubleshooting)
-9. [Additional Resources](#additional-resources)
-
----
-
+ 
 ## Prerequisites
 
 ### Required Knowledge
@@ -35,19 +21,14 @@ This lab explores two powerful unsupervised learning techniques—Hierarchical C
 
 ## Installation
 
-### Step 1: Install Required Libraries
+###  Install Required Libraries
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn scipy
 ```
 
-Or if you're using conda:
-
-```bash
-conda install numpy pandas matplotlib seaborn scikit-learn scipy
-```
-
-### Step 2: Verify Installation
+-
+### Verify Installation
 
 Open a Python terminal and run:
 
