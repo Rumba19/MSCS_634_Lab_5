@@ -1,5 +1,4 @@
-# Hierarchical and DBSCAN Clustering Lab - README
-
+# Hierarchical and DBSCAN Clustering Lab 
 ## Overview
 This lab explores two powerful unsupervised learning techniques—Hierarchical Clustering and DBSCAN—applied to the Wine dataset from scikit-learn. The lab demonstrates how different clustering algorithms perform on the same dataset and provides insights into their strengths, weaknesses, and optimal use cases.
 
@@ -27,7 +26,6 @@ This lab explores two powerful unsupervised learning techniques—Hierarchical C
 pip install numpy pandas matplotlib seaborn scikit-learn scipy
 ```
 
--
 ### Verify Installation
 
 Open a Python terminal and run:
@@ -91,6 +89,7 @@ The Wine dataset is ideal for clustering because:
 ![output](Dataload.png)
 
 ![statistics](Statistics.png)
+![Feature](Feature.png)
 ---
 
 ### Step 2: Hierarchical Clustering (20-25 minutes)
@@ -106,7 +105,7 @@ The Wine dataset is ideal for clustering because:
 - Silhouette, Homogeneity, and Completeness scores
 - 4 scatter plots showing different cluster configurations
 - Dendrogram with suggested cut points
-![Feature](Feature.png)
+
 
 ![hierarchical](Hierarchical.png)
 
@@ -168,57 +167,6 @@ The Wine dataset is ideal for clustering because:
 
 ![clusteringPer](Clustering.png)
 ---
-
-## Running the Lab
-
-### Option 1: Jupyter Notebook
-
-1. **Download the notebook**:
-   - Save the provided Python code as `clustering_lab.ipynb`
-
-2. **Start Jupyter**:
-   ```bash
-   jupyter notebook
-   ```
-
-3. **Open and run**:
-   - Navigate to `clustering_lab.ipynb`
-   - Update your name and course information in the first cell
-   - Run all cells: `Cell → Run All`
-
-### Option 2: JupyterLab
-
-1. **Start JupyterLab**:
-   ```bash
-   jupyter lab
-   ```
-
-2. **Create new notebook**:
-   - File → New → Notebook
-   - Copy and paste the code
-   - Run all cells
-
-### Option 3: Google Colab
-
-1. **Upload to Google Colab**:
-   - Go to https://colab.research.google.com/
-   - File → Upload notebook
-   - Upload your `.ipynb` file
-
-2. **Run**:
-   - All required libraries are pre-installed in Colab
-   - Run all cells
-
----
-
-## Expected Outputs
-
-### Visualizations (7 total)
-1. **Feature Distribution Comparison**: Box plots before/after standardization
-2. **Hierarchical Clusters (4 plots)**: Different n_clusters configurations
-3. **Dendrogram**: Hierarchical structure with suggested cuts
-4. **DBSCAN Results (4 plots)**: Different parameter combinations
-5. **Performance Comparison Bar Chart**: Metric comparison
 
 ### Metrics Summary
 
