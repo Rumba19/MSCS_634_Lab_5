@@ -332,102 +332,30 @@ Adjust `p` parameter to show more/fewer nodes.
 - 1.0: Perfect completeness
 - Complements homogeneity
 
----
 
-## Additional Resources
 
-### Documentation
-- **Scikit-learn Clustering**: https://scikit-learn.org/stable/modules/clustering.html
-- **Hierarchical Clustering**: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html
-- **DBSCAN**: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html
-- **Wine Dataset**: https://scikit-learn.org/stable/datasets/toy_dataset.html#wine-dataset
-
-### Academic Papers
-- **DBSCAN**: Ester, M., et al. (1996). "A density-based algorithm for discovering clusters"
-- **Hierarchical Clustering**: Müllner, D. (2011). "Modern hierarchical, agglomerative clustering algorithms"
-
-### Further Learning
-- **Coursera**: Machine Learning by Andrew Ng
-- **DataCamp**: Cluster Analysis in Python
-- **YouTube**: StatQuest - Hierarchical Clustering and DBSCAN explained
-
-### Related Topics
-- K-Means Clustering
-- Gaussian Mixture Models
-- Spectral Clustering
-- OPTICS (Ordering Points To Identify Clustering Structure)
-
----
-
-## Extending the Lab
-
-### Challenge Activities
-
-1. **Try Other Linkage Methods**:
-   ```python
-   linkage_methods = ['ward', 'complete', 'average', 'single']
-   # Compare results across different linkage methods
-   ```
-
-2. **Dimensionality Reduction First**:
-   ```python
-   from sklearn.decomposition import PCA
-   pca = PCA(n_components=2)
-   X_pca = pca.fit_transform(X_scaled)
-   # Cluster on reduced dimensions
-   ```
-
-3. **Elbow Method for Optimal Clusters**:
    ```python
    # Calculate inertia for different k values
    # Plot elbow curve
    ```
 
-4. **Apply to Other Datasets**:
-   - Iris dataset
-   - Breast Cancer dataset
-   - Customer segmentation data
+ # Conclusion
+**For the Wine dataset**:
+- Hierarchical clustering performed better overall
+- Best configuration: 3 clusters (Silhouette: 0.2774)
+- The dataset's well-separated, spherical clusters favor hierarchical methods
+- DBSCAN's noise detection wasn't necessary for this clean dataset
 
----
+**Recommendations**:
+**Use Hierarchical clustering when**:
+  - Data has clear hierarchical structure
+  - You need to explore different numbers of clusters
+  - Dataset is relatively small (<10,000 samples)
+**Use DBSCAN when**:
+  - Clusters have irregular shapes
+  - Dataset contains significant noise/outliers
+  - You don't know the number of clusters
+  - Cluster densities vary across the dataset
 
-## Lab Submission Checklist
-
-Before submitting your lab, ensure:
-
-- [ ] Name, course title, and assignment title are in the first cell
-- [ ] All cells run without errors
-- [ ] All visualizations display correctly
-- [ ] Metric tables show reasonable values
-- [ ] Analysis section is complete with your insights
-- [ ] Code includes comments explaining key steps
-- [ ] Notebook is saved with outputs visible
-- [ ] File is named appropriately (e.g., `LastName_FirstName_Clustering_Lab.ipynb`)
-
----
-
-## Contact and Support
-
-For questions about this lab:
-- Check the troubleshooting section first
-- Review scikit-learn documentation
-- Ask your instructor or TA
-- Post in the course discussion forum
-
----
-
-## License
-
-This lab is created for educational purposes. The Wine dataset is publicly available through the UCI Machine Learning Repository and scikit-learn.
-
----
-
-## Version History
-
-- **v1.0** (November 2025): Initial release
-  - Complete implementation of Hierarchical and DBSCAN clustering
-  - Comprehensive analysis and visualizations
-  - Detailed documentation and troubleshooting guide
-
----
-
-**Happy Clustering! 🎯📊**
+ 
+ 
