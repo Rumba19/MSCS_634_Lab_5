@@ -86,10 +86,10 @@ The Wine dataset is ideal for clustering because:
 - Dataset summary statistics
 - Box plots showing feature distributions before/after scaling
 
-![output](Dataload.png)
+![output](Dataset/Dataload.png)
 
-![statistics](Statistics.png)
-![Feature](Feature.png)
+![statistics](Dataset/Statistics.png)
+![Feature](Dataset/Feature.png)
 ---
 
 ### Step 2: Hierarchical Clustering (20-25 minutes)
@@ -107,9 +107,9 @@ The Wine dataset is ideal for clustering because:
 - Dendrogram with suggested cut points
 
 
-![hierarchical](Hierarchical.png)
+![hierarchical](HiearchicalClustering/Hierarchical.png)
 
-![Cluster](ClusterDiagram.png)
+![Cluster](HiearchicalClustering/ClusterDiagram.png)
 **Parameters Tested**:
 | n_clusters | Purpose |
 |------------|---------|
@@ -133,11 +133,11 @@ The Wine dataset is ideal for clustering because:
 - Performance metrics for all 12 configurations
 - 4 visualizations showing different parameter effects
 - Best configuration identification
-![dbscan](DBScan.png)
+![dbscan](DBScan/DBScan.png)
 
-![visualize](DBScanVisualize.png)
+![visualize](DBScan/DBScanVisualize.png)
 
-![outputDB](OutputDBscan.png)
+![outputDB](DBScan/OutputDBscan.png)
 
 
 
@@ -165,7 +165,7 @@ The Wine dataset is ideal for clustering because:
 - Bar chart visualization
 - Comprehensive analysis report
 
-![clusteringPer](Clustering.png)
+![clusteringPer](PerformanceComparison/Clustering.png)
 ---
 
 ### Metrics Summary
